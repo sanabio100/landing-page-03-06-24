@@ -1,0 +1,153 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px; /* Reduced spacing for better readability */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Added boldness for better navigation emphasis */
+  }
+  
+  .contact-btn .button {
+    background-color: #007bff; /* Consistent blue color using shorthand */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    min-height: 400px; /* Set minimum height for hero section */
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .services h2 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Increased heading size for emphasis */
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .service-item img {
+    max-width: 100px;
+    margin-bottom: 15px; /* Added spacing for better visual hierarchy */
+  }
+  
+  .service-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem; /* Increased subheading size for readability */
+  }
+  
+  .service-item p {
+    margin: 10px 0;
+  }
+  
+  /* CTA Section */
+  .cta {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .cta .button {
+    background-color: #28a745; /* Consistent green color using shorthand */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    padding: 50px 20px;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Increased heading size for emphasis */
+  }
+  
+  .contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Reduced spacing for better form flow */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #007bff; /* Consistent blue color using shorthand */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
