@@ -1,153 +1,248 @@
 /* Base styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  /* Header */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px; /* Reduced spacing for better readability */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold; /* Added boldness for better navigation emphasis */
+}
+
+.contact-btn .button {
+  background-color: #007bff; /* Consistent blue color using shorthand */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  min-height: 400px; /* Set minimum height for hero section */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center; /* Centralize o texto */
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Increased heading size for emphasis */
+  text-align: center; /* Centraliza o título */
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adicionado para espaçamento entre imagens */
+}
+
+.service-item {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%; /* Imagens ocupam 100% da largura do container */
+  max-width: calc(250px * 1.2); /* Aumentado em 20% */
+  height: auto; /* Altura automática para preservar proporção */
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Increased subheading size for readability */
+}
+
+.service-item p {
+  margin: 10px 0;
+}
+
+/* CTA Section */
+.cta {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta .button {
+  background-color: #28a745; /* Consistent green color using shorthand */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 50px 20px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Increased heading size for emphasis */
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Reduced spacing for better form flow */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #007bff; /* Consistent blue color using shorthand */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f8f8;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .logo img {
-    max-height: 50px;
-  }
-  
+
   nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-  
+
   nav ul li {
-    margin: 0 10px; /* Reduced spacing for better readability */
+    margin: 5px 0;
   }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold; /* Added boldness for better navigation emphasis */
-  }
-  
-  .contact-btn .button {
-    background-color: #007bff; /* Consistent blue color using shorthand */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Hero Section */
-  .hero {
-    position: relative;
-    text-align: center;
-    color: white;
-    min-height: 400px; /* Set minimum height for hero section */
-  }
-  
-  .hero img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Services Section */
-  .services {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .services h2 {
-    margin-bottom: 20px;
-    font-size: 2rem; /* Increased heading size for emphasis */
-  }
-  
+
   .service-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
   }
-  
+
   .service-item {
-    width: 30%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .service-item img {
-    max-width: 100px;
-    margin-bottom: 15px; /* Added spacing for better visual hierarchy */
-  }
-  
-  .service-item h3 {
-    margin: 10px 0;
-    font-size: 1.2rem; /* Increased subheading size for readability */
-  }
-  
-  .service-item p {
-    margin: 10px 0;
-  }
-  
-  /* CTA Section */
-  .cta {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .cta .button {
-    background-color: #28a745; /* Consistent green color using shorthand */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Contact Form Section */
-  .contact-form {
-    padding: 50px 20px;
-  }
-  
-  .contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 2rem; /* Increased heading size for emphasis */
-  }
-  
-  .contact-form form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
     width: 100%;
+    max-width: 400px;
+  }
+
+  .service-item img {
+    max-width: 100%; /* Ajuste para ocupar toda a largura disponível */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 300px;
+  }
+
+  .service-item {
+    width: 100%;
+    max-width: 100%; /* Utiliza toda a largura disponível */
+    text-align: center; /* Centraliza o item */
+  }
+
+  .service-item img {
+    max-width: calc(250px * 1.2); /* Aumentado em 20% */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta .button,
+  .contact-btn .button {
     padding: 10px;
-    margin-bottom: 15px; /* Reduced spacing for better form flow */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 1rem;
   }
-  
-  .contact-form button {
-    background-color: #007bff; /* Consistent blue color using shorthand */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-  }
+}
